@@ -683,65 +683,119 @@
   
   
   
- /* Responsive */
-@media (max-width: 768px) {
-    /* Navbar adjustments */
-    .navbar {
-      flex-direction: column;
-    }
-    .nav-links {
-      flex-direction: column;
-      width: 100%;
-    }
-    .nav-links li {
-      border-left: none;
-      border-top: 1px solid black;
-      width: 100%;
-    }
-  
-    /* Hero Section adjustments */
+/* Responsive for Tablets and Phones */
+@media (max-width: 1024px) {
     .hero-container {
       flex-direction: column;
       text-align: center;
     }
+  
+    .hero-image img {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+    }
+  
     .hero-stats {
       flex-direction: column;
     }
   
-    /* Benefits Section adjustments */
-    .benefit-item {
-      text-align: center;
-    }
-    .benefit-icon {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    .benefit-item h3 {
-      margin-top: 40px;
+    .benefits-grid {
+      grid-template-columns: 1fr;
     }
   
-    /* Testimonials Section adjustments */
     .testimonials-grid {
       flex-direction: column;
       align-items: center;
     }
   
-    /* FAQ Section adjustments */
     .faq-grid {
       grid-template-columns: 1fr;
     }
   
-    /* Footer adjustments */
     .footer-container {
       flex-direction: column;
-      gap: 20px;
     }
+  
     .footer-links {
       flex-direction: column;
-      gap: 20px;
     }
   }
   
+  /* Specific for Phones */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-links li {
+      border-left: none;
+      border-top: 1px solid black;
+    }
+  
+    .top-banner {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .nav-logo {
+      justify-content: center;
+      padding: 10px;
+    }
+    .hero-image img {
+        width: 100%;
+        max-width: 250px;
+      }
+    .hero-content h1 {
+      font-size: 32px;
+    }
+  
+    .hero-description {
+      font-size: 14px;
+    }
+  
+    .section-header h2,
+    .faq-header h2 {
+      font-size: 28px;
+    }
+  
+    .section-header p,
+    .faq-header .description,
+    .section-description {
+      font-size: 14px;
+    }
+  
+    .page-card {
+      padding: 20px;
+    }
+  
+    .page-card h3 {
+      font-size: 20px;
+    }
+  
+    .learn-more-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .footer {
+      padding: 20px 10px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
   }
   
   
