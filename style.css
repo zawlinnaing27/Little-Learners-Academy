@@ -18,8 +18,8 @@
     width: 95%;
   }
   
-  /* Navbar */
-  .navbar {
+/* Navbar */
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,31 +31,25 @@
     width: 95%;
     overflow: hidden;
   }
-
-/* Logo + Title */
-.logo-title {
+  
+  /* Logo Section */
+.nav-logo {
     display: flex;
     align-items: center;
-    background-color: #f57c2c; /* Orange background */
-    padding: 0 20px;
+    background-color: #f57c2c;
+    padding: 10px 20px;
   }
   
-  .logo-title img {
+  .nav-logo img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
   }
   
-  .logo-title span {
+  .nav-logo span {
     font-weight: bold;
     font-size: 18px;
     color: #000;
-  }
-  
-  /* White Space */
-  .nav-space {
-    flex-grow: 1;
-    background-color: #fff; /* White background */
   }
   
   /* Nav Links */
@@ -64,36 +58,49 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-grow: 1;
+  }
+  /* Empty Space */
+.nav-space {
+    flex-grow: 1; /* Push nav-links to right */
+    background-color: #fff; /* White background */
   }
   
   .nav-links li {
+    flex: 1;
+    text-align: center;
     border-left: 1px solid #333;
+  }
+  
+  .nav-links li:first-child {
+    border-left: none;
   }
   
   .nav-links a {
     display: block;
-    padding: 20px 25px;
+    padding: 15px 0;
     text-decoration: none;
     color: #000;
     font-weight: 500;
   }
   
-  /* Active (Home) */
+  /* Active Home Link */
   .nav-links a.active {
     background-color: #fbe9e3;
   }
   
-  /* Contact */
-  .nav-links a.contact-link {
+  /* Contact Button */
+  .contact-link {
     background-color: #f57c2c;
+    color: #000;
     font-weight: 600;
   }
   
-  /* Hover Effects */
+  /* Hover effect (optional) */
   .nav-links a:hover {
     background-color: #ffe8d9;
   }
-
+  
   /* Hero Section */
 .hero-section {
     background-color: #fff7f1;
