@@ -755,13 +755,15 @@
         width: 100%;
         max-width: 250px;
       }
-    .hero-content h1 {
-      font-size: 32px;
-    }
-  
-    .hero-description {
-      font-size: 14px;
-    }
+      
+      .hero-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .hero-stats {
+        flex-direction: column;
+      }
   
     .section-header h2,
     .faq-header h2 {
