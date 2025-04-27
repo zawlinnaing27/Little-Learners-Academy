@@ -725,80 +725,49 @@
     }
   }
   
-  /* Specific for Phones */
   @media (max-width: 768px) {
-    .navbar {
+    .hero-container {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .hero-stats {
+      justify-content: center;
+    }
+  
+    .testimonials-wrapper {
       flex-direction: column;
-      align-items: stretch;
     }
   
     .nav-links {
-      flex-direction: column;
-      width: 100%;
+      display: none;
     }
   
-    .nav-links li {
-      border-left: none;
-      border-top: 1px solid black;
+    .navbar {
+      justify-content: space-between;
     }
   
     .top-banner {
-      font-size: 14px;
-      padding: 8px;
+      font-size: 0.9rem;
     }
   
-    .nav-logo {
-      justify-content: center;
-      padding: 10px;
-    }
-    .hero-image img {
-        width: 100%;
-        max-width: 250px;
-      }
-      
-      .hero-container {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .hero-stats {
-        flex-direction: column;
-      }
-  
-    .section-header h2,
-    .faq-header h2 {
-      font-size: 28px;
+    .faq-grid {
+      grid-template-columns: 1fr;
     }
   
-    .section-header p,
-    .faq-header .description,
-    .section-description {
-      font-size: 14px;
+    .benefits-grid {
+      grid-template-columns: 1fr;
     }
   
-    .page-card {
-      padding: 20px;
+    .pages-grid {
+      grid-template-columns: 1fr;
     }
   
-    .page-card h3 {
-      font-size: 20px;
-    }
-  
-    .learn-more-btn {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  
-    .footer {
-      padding: 20px 10px;
-    }
-  
-    .footer-bottom {
+    .footer-container {
       flex-direction: column;
-      text-align: center;
-      gap: 10px;
+      align-items: center;
     }
   }
-  
+
   
   
